@@ -27,7 +27,7 @@
   height: 380%;
 }
 button::before {
-  background: #7EA85E;
+  background: #87646862;
   content: "";
   position: absolute;
   top: 50%;
@@ -293,12 +293,12 @@ footer p {
   transition: 1s all ease;
 }
 .box-container .top-button::before {
-  width: 100%;
+  width: 75%;
   height: 0%;
-  transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%);
 }
 .box-container .top-button:hover::before {
-  height: 380%;
+  height: 80%;
 }
 @media screen and (max-width: 500px) {
   .box-container {
@@ -464,5 +464,61 @@ footer p {
     width: 100%;
     font-size: 1.8rem;
     line-height: 3rem;
+  }
+}
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
+.about-container .about-box {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #CBCBCB;
+  width: 25%;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.about-container .about-box::before {
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.about-container .about-box:hover::before {
+  height: 380%;
+}
+.about-container .about-box:hover {
+  color: #ffffff;
+  background-color: #888888;
+}
+.about-container .about-box .pics {
+  width: 75%;
+  height: 75%;
+}
+.about-container .about-box h1 {
+  font-size: 3rem;
+  font-family: 'Varela Round', sans-serif;
+}
+.about-container .about-box p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 500px) {
+  .about-container .about-box {
+    width: 75%;
+  }
+  .about-container .about-box .pics {
+    width: 75%;
+    height: 75%;
   }
 }

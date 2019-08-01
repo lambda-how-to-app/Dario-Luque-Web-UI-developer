@@ -466,6 +466,11 @@ footer p {
     line-height: 3rem;
   }
 }
+.icon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0rem 1rem 1rem 0.5rem;
+}
 .about-container {
   width: 100%;
   display: flex;
@@ -511,7 +516,7 @@ footer p {
 }
 .about-container .about-box p {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 500px) {
   .about-container .about-box {
